@@ -1,6 +1,5 @@
 package com.sabre.interview;
 
-import com.sabre.interview.OrderService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -36,11 +35,11 @@ class OrderServiceTest {
         OrderItem orderItem = new OrderItem();
         orderItem.setPrice(10.12);
         order.setOrderItems(List.of(orderItem));
-        OrderStatus reserved = new OrderStatus();
-        reserved.setStatusId(2);
+        OrderStatus paidOrderStatus = new OrderStatus();
+        paidOrderStatus.setStatusId(2);
 
         Order result = orderService.reserveAndPayForOrder(order, 10.12);
 
-        assertThat(result.getStatus()).isEqualTo(reserved);
+        assertThat(result.getStatus()).isEqualTo(paidOrderStatus);
     }
 }

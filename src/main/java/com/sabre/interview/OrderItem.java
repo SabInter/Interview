@@ -3,6 +3,10 @@ package com.sabre.interview;
 class OrderItem {
     private double price;
 
+    /*
+    Product details omitted for interview purpose
+     */
+
     public double getPrice() {
         return price;
     }

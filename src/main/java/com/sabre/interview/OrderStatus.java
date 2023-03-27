@@ -4,6 +4,10 @@ import java.util.Objects;
 
 class OrderStatus {
 
+    /*
+    1 - Order is reserved
+    2 - Order is fully paid
+     */
     int statusId;
 
     public int getStatusId() {
