@@ -5,7 +5,7 @@ import java.util.Objects;
 class OrderStatus {
 
     /*
-    1 - Order is reserved
+    1 - Order is reserved, not paid
     2 - Order is fully paid
      */
     int statusId;
